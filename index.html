@@ -15,7 +15,35 @@
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
      crossorigin=""/>
     <title>SkyCast - Modern Hava Durumu</title>
-    <script type="module" crossorigin src="/SkyCast-weatherapp/assets/index-BcOPIiJW.js"></script>
+    
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafgraph/spa-github-pages
+      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+      // ----------------------------------------------------------------------
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
+    <script type="module" crossorigin src="/SkyCast-weatherapp/assets/index-D9dP-nTA.js"></script>
+    <link rel="modulepreload" crossorigin href="/SkyCast-weatherapp/assets/vendor-BZXSkU7I.js">
+    <link rel="modulepreload" crossorigin href="/SkyCast-weatherapp/assets/router-D9GKF78L.js">
     <link rel="stylesheet" crossorigin href="/SkyCast-weatherapp/assets/index-CvBixqAJ.css">
   </head>
   <body>
