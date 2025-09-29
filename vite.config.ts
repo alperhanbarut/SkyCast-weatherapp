@@ -12,5 +12,8 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  assetsInclude: ['**/.svg']
+  define: {
+    global: 'globalThis',
+  },
+  assetsInclude: ['**/*.svg']
 })

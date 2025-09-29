@@ -164,51 +164,7 @@ body {
     }
   }
 
-  /* Weather animation effects */
-  .rain-effect {
-    background: linear-gradient(
-      180deg,
-      rgba(174, 204, 218, 0.6) 0%,
-      rgba(174, 204, 218, 0.3) 50%,
-      transparent 70%
-    );
-    background-size: 2px 100px;
-    background-repeat: repeat-x;
-    animation: rain-fall 0.8s linear infinite;
-    height: 100%;
-    width: 100%;
-  }
 
-  .snow-effect {
-    background-image: radial-gradient(2px 2px at 20px 30px, white, transparent),
-      radial-gradient(2px 2px at 40px 70px, white, transparent),
-      radial-gradient(1px 1px at 90px 40px, white, transparent),
-      radial-gradient(1px 1px at 130px 80px, white, transparent),
-      radial-gradient(2px 2px at 160px 30px, white, transparent);
-    background-repeat: repeat;
-    background-size: 200px 100px;
-    animation: snow-fall 3s linear infinite;
-    height: 100%;
-    width: 100%;
-  }
-
-  @keyframes rain-fall {
-    0% {
-      background-position: 0% 0%;
-    }
-    100% {
-      background-position: 0% 100%;
-    }
-  }
-
-  @keyframes snow-fall {
-    0% {
-      background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
-    }
-    100% {
-      background-position: 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%;
-    }
-  }
 }
 
 ::view-transition-old(root),

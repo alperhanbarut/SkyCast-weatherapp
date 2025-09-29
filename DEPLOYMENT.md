@@ -32,7 +32,7 @@ For production deployment, make sure to add your WeatherAPI key to GitHub Secret
 
 ## Live Demo
 
-🔗 **[Live Demo](https://your-username.github.io/skycast)**
+🔗 **[Live Demo](https://alperhanbarut.github.io/skycast)**
 
 ## Build Information
 
