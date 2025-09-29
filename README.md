@@ -1,684 +1,167 @@
-# SkyCast - Modern Hava Durumu Uygulaması# SkyCast - Modern Hava Durumu Uygulaması# SkyCast - Modern Weather Application
+# SkyCast - Modern Hava Durumu Uygulaması
 
-[🇺🇸 English](#english) | [🇹🇷 Türkçe](#türkçe)React, TypeScript ve Vite ile geliştirilmiş profesyonel hava durumu uygulaması. WeatherAPI.com entegrasyonu ile gerçek zamanlı hava durumu verileri ve akıllı kıyafet önerileri sunar.A professional weather application built with React, TypeScript, and Vite. Features real-time weather data integration with WeatherAPI.com and intelligent outfit recommendations based on weather conditions.
+React, TypeScript ve Vite ile geliştirilmiş profesyonel hava durumu uygulaması. WeatherAPI.com entegrasyonu ile gerçek zamanlı hava durumu verileri ve akıllı kıyafet önerileri sunar.
 
----## Özellikler## Features
+## Özellikler
 
-## 🇹🇷 Türkçe- **İnteraktif 3D Dünya**: Etkileşimli dünya haritası üzerinden hava durumu verilerini keşfedin- **Interactive 3D Globe**: Explore weather data through an interactive world map
-
-React, TypeScript ve Vite ile geliştirilmiş profesyonel hava durumu uygulaması. WeatherAPI.com entegrasyonu ile gerçek zamanlı hava durumu verileri ve akıllı kıyafet önerileri sunar.- **Gerçek Zamanlı Hava Durumu**: Saatlik güncellemelerle anlık hava durumu bilgileri- **Real-time Weather Data**: Current weather conditions with hourly updates
-
-### Özellikler- **Akıllı Kıyafet Önerileri**: Hava durumuna dayalı yapay zeka destekli giyim önerileri- **Smart Outfit Recommendations**: AI-powered clothing suggestions based on weather
-
-- **İnteraktif 3D Dünya**: Etkileşimli dünya haritası üzerinden hava durumu verilerini keşfedin- **7 Günlük Tahmin**: Daha iyi planlama için genişletilmiş hava durumu tahminleri- **7-Day Forecast**: Extended weather predictions for better planning
-
+- **İnteraktif 3D Dünya**: Etkileşimli dünya haritası üzerinden hava durumu verilerini keşfedin
 - **Gerçek Zamanlı Hava Durumu**: Saatlik güncellemelerle anlık hava durumu bilgileri
-
-- **Akıllı Kıyafet Önerileri**: Hava durumuna dayalı yapay zeka destekli giyim önerileri- **Şehir Arama ve Favoriler**: Favori lokasyonlarınızı arayın ve kaydedin- **City Search & Favorites**: Search and save your favorite locations
-
+- **Akıllı Kıyafet Önerileri**: Hava durumuna dayalı yapay zeka destekli giyim önerileri
 - **7 Günlük Tahmin**: Daha iyi planlama için genişletilmiş hava durumu tahminleri
-
-- **Şehir Arama ve Favoriler**: Favori lokasyonlarınızı arayın ve kaydedin- **Duyarlı Tasarım**: Tüm cihaz boyutları ve ekran çözünürlükleri için optimize edildi- **Responsive Design**: Optimized for all device sizes and screen resolutions
-
+- **Şehir Arama ve Favoriler**: Favori lokasyonlarınızı arayın ve kaydedin
 - **Duyarlı Tasarım**: Tüm cihaz boyutları ve ekran çözünürlükleri için optimize edildi
-
-- **Tema Desteği**: Cyan-teal renk paleti ile karanlık ve aydınlık mod desteği- **Tema Desteği**: Cyan-teal renk paleti ile karanlık ve aydınlık mod desteği- **Theme Support**: Dark and light modes with cyan-teal color palette
-
-- **Galaxy Arka Plan Efektleri**: Gelişmiş görsel deneyim için dinamik parçacık sistemi
-
-- **Akıcı Navigasyon**: Yumuşak kaydırma animasyonları ile React Router- **Galaxy Arka Plan Efektleri**: Gelişmiş görsel deneyim için dinamik parçacık sistemi- **Galaxy Background Effects**: Dynamic particle system for enhanced visual appeal
-
+- **Tema Desteği**: Cyan-teal renk paleti ile karanlık ve aydınlık mod desteği
+- **Canvas Animasyonları**: Hava durumuna uygun partikül efektleri ve arka plan animasyonları
+- **Galaxy Efektleri**: Gelişmiş görsel deneyim için dinamik parçacık sistemi
 - **Performans Optimizasyonu**: Hızlı yükleme süreleri ve verimli veri işleme
 
-- **Akıcı Navigasyon**: Yumuşak kaydırma animasyonları ile React Router- **Smooth Navigation**: React Router with smooth scroll animations
+## Teknolojiler
 
-### Kurulum
+- **Frontend**: React 18, TypeScript, Vite
+- **Stil**: Tailwind CSS, Lucide React Icons
+- **API**: WeatherAPI.com entegrasyonu
+- **Durum Yönetimi**: Redux Toolkit
+- **Routing**: React Router DOM
+- **Animasyonlar**: Canvas API, CSS Transitions
+- **UI Kütüphanesi**: Shadcn/ui bileşenleri
 
-- **Performans Optimizasyonu**: Hızlı yükleme süreleri ve verimli veri işleme- **Performance Optimized**: Fast loading times and efficient data handlingModern Hava Durumu Uygulaması
+## Kurulum
 
-#### Ön Gereksinimler
-
-## KurulumReact + TypeScript + Vite ile geliştirilmiş modern hava durumu uygulaması. WeatherAPI.com entegrasyonu ile gerçek zamanlı hava durumu verileri ve akıllı kıyafet önerileri.
+### Ön Gereksinimler
 
 - Node.js (sürüm 18 veya üzeri)
+- npm veya yarn paket yöneticisi
+- WeatherAPI.com API anahtarı
 
-- npm veya yarn paket yöneticisi### Ön Gereksinimler## ✨ Özellikler
+### Kurulum Adımları
 
-#### Kurulum Adımları- Node.js (sürüm 18 veya üzeri)- 🌍 İnteraktif 3D dünya küresini
+1. **Projeyi klonlayın:**
+   \`\`\`bash
+   git clone https://github.com/alperhanbarut/SkyCast-weatherapp.git
+   cd SkyCast-weatherapp
+   \`\`\`
 
-1. **Projeyi klonlayın:**- npm veya yarn paket yöneticisi- 🌡️ Anlık hava durumu bilgileri
+2. **Bağımlılıkları yükleyin:**
+   \`\`\`bash
+   npm install
+   \`\`\`
 
-````bash
+3. **Çevre değişkenlerini ayarlayın:**
+   \`.env\` dosyası oluşturun ve WeatherAPI anahtarınızı ekleyin:
+   \`\`\`env
+   VITE_WEATHER_API_KEY=your_weather_api_key_here
+   \`\`\`
 
-git clone <repository-url>- � Akıllı kıyafet önerileri
+4. **Geliştirme sunucusunu başlatın:**
+   \`\`\`bash
+   npm run dev
+   \`\`\`
 
-cd skycast
+5. **Tarayıcınızda açın:**
+   [http://localhost:5173](http://localhost:5173)
 
-```### Kurulum Adımları- �📅 7 günlük hava durumu tahmini
+## Kullanım
 
+### Temel Özellikler
 
+1. **Şehir Arama**: Arama çubuğuna şehir adı yazarak hava durumu bilgilerini görüntüleyin
+2. **Hava Durumu Detayları**: Sıcaklık, nem, rüzgar hızı ve diğer meteorolojik verileri inceleyin
+3. **Kıyafet Önerileri**: Mevcut hava şartlarına göre uygun giyim önerilerini görün
+4. **7 Günlük Tahmin**: Gelecek hafta için detaylı hava durumu tahminlerini planlayın
+5. **Tema Değiştirme**: Sağ üst köşedeki düğme ile karanlık/aydınlık mod arasında geçiş yapın
 
-2. **Bağımlılıkları yükleyin:**- 🏙️ Şehir arama ve favoriler
+### İleri Özellikler
 
-```bash
+- **3D Globe**: Ana sayfadaki interaktif dünya haritasını keşfedin
+- **Animasyonlar**: Hava durumuna uygun arka plan efektlerini izleyin
+- **Responsive Tasarım**: Mobil, tablet ve masaüstü cihazlarda optimize edilmiş deneyim
 
-npm install1. **Projeyi klonlayın:**- 📱 Tam responsive tasarım
+## Proje Yapısı
 
-````
-
-````````bash- 🌙 Dark/Light tema desteği (Cyan-Teal paleti)
-
-3. **Ortam değişkenlerini yapılandırın:**
-
-```bashgit clone <repository-url>- ⭐ Galaxy arka plan efektleri
-
-cp .env.example .env
-
-```cd skycast- 🧭 React Router ile sayfa yönlendirme
-
-
-
-4. **WeatherAPI anahtarı alın:**```- ⚡ Smooth scroll ve animasyonlar
-
-   - [WeatherAPI.com](https://www.weatherapi.com/signup.aspx) adresinden ücretsiz hesap oluşturun
-
-   - Kontrol panelinden API anahtarınızı kopyalayın
-
-   - `.env` dosyasına `VITE_WEATHER_API_KEY` olarak anahtarı ekleyin
-
-2. **Bağımlılıkları yükleyin:**## Installation
-
-5. **Geliştirme sunucusunu başlatın:**
-
-```bash```bash
-
-npm run dev
-
-```npm install### Prerequisites
-
-
-
-Uygulama `http://localhost:5173` adresinde erişilebilir olacaktır.````
-
-
-
-### Teknoloji Yığını- Node.js (version 18 or higher)
-
-
-
-- **Frontend Framework:** TypeScript ile React 183. **Ortam değişkenlerini yapılandırın:**- npm or yarn package manager
-
-- **Build Aracı:** Hızlı geliştirme ve optimize edilmiş yapılar için Vite
-
-- **Stil:** Özel tasarım sistemi ile Tailwind CSS```bash
-
-- **3D Grafik:** İnteraktif küre ve Galaxy efektleri için OGL kütüphanesi
-
-- **State Yönetimi:** Uygulama durumu için Redux Toolkitcp .env.example .env### Setup Instructions
-
-- **Yönlendirme:** Navigasyon için React Router DOM
-
-- **API Entegrasyonu:** Hava durumu verileri için WeatherAPI.com```
-
-- **UI Bileşenleri:** shadcn/ui ile özel bileşenler
-
-- **İkonlar:** Lucide React ve Material-UI ikonları1. **Clone the repository:**
-
-
-
-### Proje Yapısı2. **WeatherAPI anahtarı alın:**
-
-
-
-```   - [WeatherAPI.com](https://www.weatherapi.com/signup.aspx) adresinden ücretsiz hesap oluşturun```bash
-
+\`\`\`
 src/
+├── components/ # React bileşenleri
+│ ├── ui/ # Shadcn/ui bileşenleri
+│ ├── VideoBackground.tsx # Canvas animasyonları
+│ ├── Galaxy.tsx # 3D parçacık sistemi
+│ └── ...
+├── pages/ # Sayfa bileşenleri
+├── hooks/ # Özel React hook'ları
+├── redux/ # Redux store ve slice'lar
+├── api/ # API servis fonksiyonları
+├── types/ # TypeScript tip tanımları
+├── utils/ # Yardımcı fonksiyonlar
+└── config/ # Yapılandırma dosyaları
+\`\`\`
 
-├── api/                    # API servisleri ve veri çekme   - Kontrol panelinden API anahtarınızı kopyalayıngit clone <repository-url>
+## Özelleştirme
 
-│   └── weatherService.ts
+### Tema Renkleri
 
-├── components/             # Yeniden kullanılabilir React bileşenleri   - `.env` dosyasına `VITE_WEATHER_API_KEY` olarak anahtarı ekleyincd skycast
+Uygulama cyan-teal renk paleti kullanır. \`tailwind.config.js\` dosyasından renkleri özelleştirebilirsiniz.
 
-│   ├── ui/                # Temel UI bileşenleri
+### Animasyonlar
 
-│   ├── Navbar.tsx         # Ana navigasyon```````
+\`VideoBackground.tsx\` dosyasından hava durumu animasyonlarını düzenleyebilirsiniz:
 
-│   ├── Footer.tsx         # Galaxy arka planlı footer
+- Yağmur damlacıkları
+- Kar tanecikleri
+- Şimşek efektleri
+- Güneş ışıltıları
 
-│   ├── WeatherCard.tsx    # Hava durumu gösterge bileşenleri5. **Geliştirme sunucusunu başlatın:**
+## Deployment
 
-│   └── Galaxy.tsx         # 3D parçacık sistemi
+### GitHub Pages
 
-├── config/                # Uygulama yapılandırması```bash2. **Install dependencies:**
-
-│   ├── navigation.ts      # Navigasyon rotaları
-
-│   └── RouterConfig.tsx   # Router kurulumunpm run dev
-
-├── pages/                 # Sayfa bileşenleri
-
-│   ├── HomePage.tsx       # Ana açılış sayfası``````bash
-
-│   ├── WeatherDetailsPage.tsx # Hava durumu detayları
-
-│   └── OutfitPage.tsx     # Kıyafet önerilerinpm install
-
-├── redux/                 # State yönetimi
-
-│   ├── store.ts           # Redux store yapılandırmasıUygulama `http://localhost:5173` adresinde erişilebilir olacaktır.```
-
-│   └── slices/            # Redux slices
-
-├── hooks/                 # Özel React hooks
-
-├── lib/                   # Yardımcı fonksiyonlar
-
-├── types/                 # TypeScript tip tanımları## Teknoloji Yığını3. **Configure environment variables:**
-
-└── utils/                 # Yardımcı fonksiyonlar
-
-```
-
-
-
-### Geliştirme Komutları- **Frontend Framework:** TypeScript ile React 18```bash
-
-
-
-```bash- **Build Aracı:** Hızlı geliştirme ve optimize edilmiş yapılar için Vitecp .env.example .env
-
-# Hot reload ile geliştirme sunucusunu başlat
-
-npm run dev- **Stil:** Özel tasarım sistemi ile Tailwind CSS```
-
-
-
-# Üretim için uygulamayı derle- **3D Grafik:** İnteraktif küre ve Galaxy efektleri için OGL kütüphanesi
-
+\`\`\`bash
 npm run build
-
-- **State Yönetimi:** Uygulama durumu için Redux Toolkit4. **Obtain WeatherAPI key:**
-
-# Üretim derlemesini yerel olarak önizle
-
-npm run preview- **Yönlendirme:** Navigasyon için React Router DOM
-
-
-
-# Kod kalitesi kontrolü için ESLint çalıştır- **API Entegrasyonu:** Hava durumu verileri için WeatherAPI.com   - Create a free account at [WeatherAPI.com](https://www.weatherapi.com/signup.aspx)
-
-npm run lint
-
-- **UI Bileşenleri:** shadcn/ui ile özel bileşenler   - Copy your API key from the dashboard
-
-# GitHub Pages'e deploy et
-
-npm run deploy- **İkonlar:** Lucide React ve Material-UI ikonları   - Add the key to your `.env` file as `VITE_WEATHER_API_KEY`
-
-```
-
-
-
-### Performans
-
-## Proje Yapısı5. **Start the development server:**
-
-- **Derleme Boyutu**: ~303 KB (gzipped)
-
-- **Yükleme Süresi**: 3G ağlarda < 2 saniye
-
-- **Lighthouse Skoru**: Tüm metriklerde 95+
-
-- **Core Web Vitals**: Tüm metrikler yeşil bölgede``````bash
-
-
-
-### Katkıda Bulunmasrc/npm run dev
-
-
-
-SkyCast'i geliştirmek için katkılarınızı memnuniyetle karşılıyoruz! Lütfen şu adımları izleyin:├── api/                    # API servisleri ve veri çekme```
-
-
-
-1. **Repository'yi fork edin**│   └── weatherService.ts
-
-2. **Özellik dalı oluşturun**: `git checkout -b feature/amazing-feature`
-
-3. **Değişikliklerinizi commit edin**: `git commit -m 'Harika özellik ekle'`├── components/             # Yeniden kullanılabilir React bileşenleriThe application will be available at `http://localhost:5173`
-
-4. **Dalı push edin**: `git push origin feature/amazing-feature`
-
-5. **Pull Request açın**│   ├── ui/                # Temel UI bileşenleri
-
-
-
-### Lisans│   ├── Navbar.tsx         # Ana navigasyon## Technology Stack
-
-
-
-Bu proje MIT Lisansı altında lisanslanmıştır.│   ├── Footer.tsx         # Galaxy arka planlı footer
-
-
-
-### Destek│   ├── WeatherCard.tsx    # Hava durumu gösterge bileşenleri- **Frontend Framework:** React 18 with TypeScript
-
-
-
-- **Issues**: GitHub üzerinde issue açın│   └── Galaxy.tsx         # 3D parçacık sistemi- **Build Tool:** Vite for fast development and optimized builds
-
-- **Tartışmalar**: Sorular için GitHub Discussions kullanın
-
-- **Güvenlik**: Güvenlik sorunlarını e-posta ile özel olarak bildirin├── config/                # Uygulama yapılandırması- **Styling:** Tailwind CSS with custom design system
-
-
-
----│   ├── navigation.ts      # Navigasyon rotaları- **3D Graphics:** OGL library for interactive globe and Galaxy effects
-
-
-
-## 🇺🇸 English│   └── RouterConfig.tsx   # Router kurulumu- **State Management:** Redux Toolkit for application state
-
-
-
-A professional weather application built with React, TypeScript, and Vite. Features real-time weather data integration with WeatherAPI.com and intelligent outfit recommendations based on weather conditions.├── pages/                 # Sayfa bileşenleri- **Routing:** React Router DOM for navigation
-
-
-
-### Features│   ├── HomePage.tsx       # Ana açılış sayfası- **API Integration:** WeatherAPI.com for weather data
-
-
-
-- **Interactive 3D Globe**: Explore weather data through an interactive world map│   ├── WeatherDetailsPage.tsx # Hava durumu detayları- **UI Components:** Custom components with shadcn/ui
-
-- **Real-time Weather Data**: Current weather conditions with hourly updates
-
-- **Smart Outfit Recommendations**: AI-powered clothing suggestions based on weather│   └── OutfitPage.tsx     # Kıyafet önerileri- **Icons:** Lucide React and Material-UI icons
-
-- **7-Day Forecast**: Extended weather predictions for better planning
-
-- **City Search & Favorites**: Search and save your favorite locations├── redux/                 # State yönetimi
-
-- **Responsive Design**: Optimized for all device sizes and screen resolutions
-
-- **Theme Support**: Dark and light modes with cyan-teal color palette│   ├── store.ts           # Redux store yapılandırması## Project Structure
-
-- **Galaxy Background Effects**: Dynamic particle system for enhanced visual appeal
-
-- **Smooth Navigation**: React Router with smooth scroll animations│   └── slices/            # Redux slices
-
-- **Performance Optimized**: Fast loading times and efficient data handling
-
-├── hooks/                 # Özel React hooks```
-
-### Installation
-
-├── lib/                   # Yardımcı fonksiyonlarsrc/
-
-#### Prerequisites
-
-├── types/                 # TypeScript tip tanımları├── api/                    # API services and data fetching
-
-- Node.js (version 18 or higher)
-
-- npm or yarn package manager└── utils/                 # Yardımcı fonksiyonlar│   └── weatherService.ts
-
-
-
-#### Setup Instructions```├── components/             # Reusable React components
-
-
-
-1. **Clone the repository:**│   ├── ui/                # Base UI components
-
-```bash
-
-git clone <repository-url>## API Entegrasyonu│   ├── Navbar.tsx         # Main navigation
-
-cd skycast
-
-```│   ├── Footer.tsx         # Footer with Galaxy background
-
-
-
-2. **Install dependencies:**Uygulama aşağıdaki hizmetleri sağlamak için [WeatherAPI.com](https://www.weatherapi.com/) ile entegre olmuştur:│   ├── WeatherCard.tsx    # Weather display components
-
-```bash
-
-npm install│   └── Galaxy.tsx         # 3D particle system
-
-```
-
-- **Mevcut Hava Durumu**: Gerçek zamanlı hava koşulları├── config/                # Application configuration
-
-3. **Configure environment variables:**
-
-```bash- **7 Günlük Tahmin**: Genişletilmiş hava durumu tahminleri│   ├── navigation.ts      # Navigation routes
-
-cp .env.example .env
-
-```- **Lokasyon Arama**: Global şehir ve lokasyon arama│   └── RouterConfig.tsx   # Router setup
-
-
-
-4. **Obtain WeatherAPI key:**- **Saatlik Veri**: Detaylı saatlik hava durumu bilgileri├── pages/                 # Page components
-
-   - Create a free account at [WeatherAPI.com](https://www.weatherapi.com/signup.aspx)
-
-   - Copy your API key from the dashboard- **Geçmiş Veriler**: Analiz için geçmiş hava durumu desenleri│   ├── HomePage.tsx       # Main landing page
-
-   - Add the key to your `.env` file as `VITE_WEATHER_API_KEY`
-
-│   ├── WeatherDetailsPage.tsx # Weather details
-
-5. **Start the development server:**
-
-```bash## Ortam Değişkenleri│   └── OutfitPage.tsx     # Outfit recommendations
-
-npm run dev
-
-```├── redux/                 # State management
-
-
-
-The application will be available at `http://localhost:5173`Kök dizinde aşağıdaki değişkenlerle bir `.env` dosyası oluşturun:│   ├── store.ts           # Redux store configuration
-
-
-
-### Technology Stack│   └── slices/            # Redux slices
-
-
-
-- **Frontend Framework:** React 18 with TypeScript```bash├── hooks/                 # Custom React hooks
-
-- **Build Tool:** Vite for fast development and optimized builds
-
-- **Styling:** Tailwind CSS with custom design system# Gerekli: WeatherAPI.com API Anahtarı├── lib/                   # Utility functions
-
-- **3D Graphics:** OGL library for interactive globe and Galaxy effects
-
-- **State Management:** Redux Toolkit for application stateVITE_WEATHER_API_KEY=your_api_key_here├── types/                 # TypeScript type definitions
-
-- **Routing:** React Router DOM for navigation
-
-- **API Integration:** WeatherAPI.com for weather data└── utils/                 # Helper functions
-
-- **UI Components:** Custom components with shadcn/ui
-
-- **Icons:** Lucide React and Material-UI icons# İsteğe bağlı: Geliştirme ortamı```
-
-
-
-### Project StructureNODE_ENV=development
-
-
-
-``````## API Integration
-
-src/
-
-├── api/                    # API services and data fetching
-
-│   └── weatherService.ts
-
-├── components/             # Reusable React components## Ana BileşenlerThe application integrates with [WeatherAPI.com](https://www.weatherapi.com/) to provide:
-
-│   ├── ui/                # Base UI components
-
-│   ├── Navbar.tsx         # Main navigation
-
-│   ├── Footer.tsx         # Footer with Galaxy background
-
-│   ├── WeatherCard.tsx    # Weather display components- **İnteraktif Küre**: Hava durumu verisi görselleştirme ile 3D dünya haritası- **Current Weather**: Real-time weather conditions
-
-│   └── Galaxy.tsx         # 3D particle system
-
-├── config/                # Application configuration- **Hava Durumu Kartları**: Kapsamlı hava durumu bilgi gösterimi- **7-Day Forecast**: Extended weather predictions
-
-│   ├── navigation.ts      # Navigation routes
-
-│   └── RouterConfig.tsx   # Router setup- **Galaxy Arka Plan**: WebGL kullanarak dinamik parçacık sistemi- **Location Search**: Global city and location search
-
-├── pages/                 # Page components
-
-│   ├── HomePage.tsx       # Main landing page- **Navigasyon Çubuğu**: Arama işlevselliği ile duyarlı navigasyon- **Hourly Data**: Detailed hourly weather information
-
-│   ├── WeatherDetailsPage.tsx # Weather details
-
-│   └── OutfitPage.tsx     # Outfit recommendations- **Tahmin Bileşenleri**: Günlük ve saatlik hava durumu tahminleri- **Historical Data**: Past weather patterns for analysis
-
-├── redux/                 # State management
-
-│   ├── store.ts           # Redux store configuration- **Kıyafet Önerileri**: Hava durumuna dayalı akıllı giyim önerileri
-
-│   └── slices/            # Redux slices
-
-├── hooks/                 # Custom React hooks- **Tema Değiştirici**: Sorunsuz karanlık/aydınlık mod geçişi## Environment Variables
-
-├── lib/                   # Utility functions
-
-├── types/                 # TypeScript type definitions
-
-└── utils/                 # Helper functions
-
-```## Duyarlı TasarımCreate a `.env` file in the root directory with the following variables:
-
-
-
-### Development Scripts
-
-
-
-```bashUygulama tam duyarlı ve tüm cihaz boyutları için optimize edilmiştir:```bash
-
-# Start development server with hot reload
-
-npm run dev# Required: WeatherAPI.com API Key
-
-
-
-# Build application for production- **Mobil Cihazlar**: Dokunma optimize etkileşimleri ile 320px ve üzeriVITE_WEATHER_API_KEY=your_api_key_here
-
-npm run build
-
-- **Tabletler**: Gelişmiş dokunma hareketleri ile 768px ve üzeri
-
-# Preview production build locally
-
-npm run preview- **Masaüstü**: Tam özellik seti ile 1024px ve üzeri# Optional: Development environment
-
-
-
-# Run ESLint for code quality checks- **Büyük Ekranlar**: Optimize edilmiş düzenler ile 1440px ve üzeriNODE_ENV=development
-
-npm run lint
-
-````````
-
-# Deploy to GitHub Pages
-
-npm run deploy## Geliştirme Komutları
-
-`````
-
-## Key Components
-
-### Performance
-
-````bash
-
-- **Build Size**: ~303 KB (gzipped)
-
-- **Load Time**: < 2 seconds on 3G networks# Hot reload ile geliştirme sunucusunu başlat- **Interactive Globe**: 3D world map with weather data visualization
-
-- **Lighthouse Score**: 95+ across all metrics
-
-- **Core Web Vitals**: All metrics in green zonenpm run dev- **Weather Cards**: Comprehensive weather information display
-
-
-
-### Contributing- **Galaxy Background**: Dynamic particle system using WebGL
-
-
-
-We welcome contributions to improve SkyCast! Please follow these steps:# Üretim için uygulamayı derle- **Navigation Bar**: Responsive navigation with search functionality
-
-
-
-1. **Fork the repository**npm run build- **Forecast Components**: Daily and hourly weather predictions
-
-2. **Create a feature branch**: `git checkout -b feature/amazing-feature`
-
-3. **Commit your changes**: `git commit -m 'Add amazing feature'`- **Outfit Recommendations**: Smart clothing suggestions based on weather
-
-4. **Push to the branch**: `git push origin feature/amazing-feature`
-
-5. **Open a Pull Request**# Üretim derlemesini yerel olarak önizle- **Theme Toggle**: Seamless dark/light mode switching
-
-
-
-### Licensenpm run preview
-
-
-
-This project is licensed under the MIT License.## Responsive Design
-
-
-
-### Support# Kod kalitesi kontrolü için ESLint çalıştır
-
-
-
-- **Issues**: Open an issue on GitHubnpm run lintThe application is fully responsive and optimized for all device sizes:
-
-- **Discussions**: Use GitHub Discussions for questions
-
-- **Security**: Report security issues privately via email
-
-
-
----# GitHub Pages'e deploy et- **Mobile Devices**: 320px and up with touch-optimized interactions
-
-
-
-**SkyCast** - Professional weather application built with modern web technologies.npm run deploy- **Tablets**: 768px and up with enhanced touch gestures
-
-```- **Desktop**: 1024px and up with full feature set
-
-- **Large Screens**: 1440px and up with optimized layouts
-
-## Performans
-
-## Development Scripts
-
-- **Derleme Boyutu**: ~303 KB (gzipped)
-
-- **Yükleme Süresi**: 3G ağlarda < 2 saniye```bash
-
-- **Lighthouse Skoru**: Tüm metriklerde 95+# Start development server with hot reload
-
-- **Core Web Vitals**: Tüm metrikler yeşil bölgedenpm run dev
-
-
-
-## Tarayıcı Desteği# Build application for production
-
-npm run build
-
-- **Chrome**: 88+
-
-- **Firefox**: 85+# Preview production build locally
-
-- **Safari**: 14+npm run preview
-
-- **Edge**: 88+
-
-# Run ESLint for code quality checks
-
-## Katkıda Bulunmanpm run lint
-
-
-
-SkyCast'i geliştirmek için katkılarınızı memnuniyetle karşılıyoruz! Lütfen şu adımları izleyin:# Deploy to GitHub Pages
-
 npm run deploy
+\`\`\`
 
-1. **Repository'yi fork edin**```
+### Vercel
 
-2. **Özellik dalı oluşturun**: `git checkout -b feature/amazing-feature`
+\`\`\`bash
+npm run build
 
-3. **Değişikliklerinizi commit edin**: `git commit -m 'Harika özellik ekle'`## Performance
+# Vercel CLI ile deploy edin
 
-4. **Dalı push edin**: `git push origin feature/amazing-feature`
+\`\`\`
 
-5. **Pull Request açın**- **Build Size**: ~303 KB (gzipped)
+### Netlify
 
-- **Load Time**: < 2 seconds on 3G networks
+\`\`\`bash
+npm run build
 
-### Kod Stili Kılavuzları- **Lighthouse Score**: 95+ across all metrics
+# build/ klasörünü Netlify'a yükleyin
 
-- **Core Web Vitals**: All metrics in green zone
+\`\`\`
 
-- TypeScript en iyi uygulamalarını takip edin
+## Katkıda Bulunma
 
-- Stil için Tailwind CSS kullanın## Browser Support
+1. Bu repository'yi fork edin
+2. Feature branch'i oluşturun (\`git checkout -b feature/YeniOzellik\`)
+3. Değişikliklerinizi commit edin (\`git commit -am 'Yeni özellik eklendi'\`)
+4. Branch'i push edin (\`git push origin feature/YeniOzellik\`)
+5. Pull Request oluşturun
 
-- Anlamlı bileşen ve değişken isimleri yazın
+## Lisans
 
-- Karmaşık fonksiyonlar için JSDoc yorumları ekleyin- **Chrome**: 88+
+Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için \`LICENSE\` dosyasına bakın.
 
-- Göndermeden önce tüm testlerin geçtiğinden emin olun- **Firefox**: 85+
+## İletişim
 
-- **Safari**: 14+
+- **Geliştirici**: Alperhan Barut
+- **GitHub**: [@alperhanbarut](https://github.com/alperhanbarut)
+- **Demo**: [SkyCast Live Demo](https://alperhanbarut.github.io/SkyCast-weatherapp/)
 
-## Lisans- **Edge**: 88+
+## Teşekkürler
 
-
-
-Bu proje MIT Lisansı altında lisanslanmıştır - detaylar için [LICENSE](LICENSE) dosyasına bakın.## Contributing
-
-
-
-## DestekWe welcome contributions to improve SkyCast! Please follow these steps:
-
-
-
-Sorular, hata raporları veya özellik istekleri için:1. **Fork the repository**
-
-2. **Create a feature branch**: `git checkout -b feature/amazing-feature`
-
-- **Issues**: GitHub üzerinde issue açın3. **Commit your changes**: `git commit -m 'Add amazing feature'`
-
-- **Tartışmalar**: Sorular için GitHub Discussions kullanın4. **Push to the branch**: `git push origin feature/amazing-feature`
-
-- **Güvenlik**: Güvenlik sorunlarını e-posta ile özel olarak bildirin5. **Open a Pull Request**
-
-
-
----### Code Style Guidelines
-
-
-
-**SkyCast** - Modern web teknolojileri ile geliştirilmiş profesyonel hava durumu uygulaması.- Follow TypeScript best practices
-- Use Tailwind CSS for styling
-- Write meaningful component and variable names
-- Add JSDoc comments for complex functions
-- Ensure all tests pass before submitting
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-For questions, bug reports, or feature requests:
-
-- **Issues**: Open an issue on GitHub
-- **Discussions**: Use GitHub Discussions for questions
-- **Security**: Report security issues privately via email
+- [WeatherAPI.com](https://weatherapi.com/) - Hava durumu verileri için
+- [Tailwind CSS](https://tailwindcss.com/) - Styling framework
+- [Lucide React](https://lucide.dev/) - İkonlar için
+- [Vite](https://vitejs.dev/) - Build tool
+- [React](https://reactjs.org/) - UI framework
 
 ---
 
-**SkyCast** - Professional weather application built with modern web technologies.
-`````
+Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
