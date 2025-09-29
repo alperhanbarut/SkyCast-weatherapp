@@ -2,6 +2,10 @@
 
 React, TypeScript ve Vite ile geliştirilmiş profesyonel hava durumu uygulaması. WeatherAPI.com entegrasyonu ile gerçek zamanlı hava durumu verileri ve akıllı kıyafet önerileri sunar.
 
+## 🔗 Siteyi Canlı Olarak İnceleyin
+
+**[SkyCast - Canlı Demo](https://alperhanbarut.github.io/SkyCast-weatherapp/home)**
+
 ## Özellikler
 
 - **İnteraktif 3D Dünya**: Etkileşimli dünya haritası üzerinden hava durumu verilerini keşfedin
