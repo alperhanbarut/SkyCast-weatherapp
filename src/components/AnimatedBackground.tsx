@@ -92,11 +92,22 @@ const AnimatedBackground: React.FC<AnimatedBackgroundProps> = ({
     return true;
   }, [getVideoFile]);
 
+  const getWeatherType = () => {
+    const condition = weatherCondition.toLowerCase();
+    if (condition.includes("rain") || condition.includes("yağmur")) return "rainy";
+    if (condition.includes("snow") || condition.includes("kar")) return "snowy";
+    if (condition.includes("cloud") || condition.includes("bulut")) return "cloudy";
+    if (condition.includes("storm") || condition.includes("fırtına")) return "stormy";
+    if (condition.includes("fog") || condition.includes("sis")) return "foggy";
+    if (condition.includes("clear") || condition.includes("açık")) return "sunny";
+    return "sunny";
+  };
+
   if (videoExists) {
     return (
       <VideoBackground
-        key={getVideoFile}
-        videoSrc={getVideoFile}
+        key={weatherCondition}
+        weatherType={getWeatherType()}
         className={className}
       />
     );
