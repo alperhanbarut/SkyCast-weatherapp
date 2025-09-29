@@ -3,7 +3,7 @@
 React, TypeScript ve Vite ile geliştirilmiş profesyonel hava durumu uygulaması. WeatherAPI.com entegrasyonu ile gerçek zamanlı hava durumu verileri ve akıllı kıyafet önerileri sunar.
 
 
-## [Webisteyi Canlı İnceleyin](https://alperhanbarut.github.io/SkyCast-weatherapp/home)
+# Canlı İnceleme için - [Tıklayın](https://alperhanbarut.github.io/SkyCast-weatherapp/home)
 
 ## Özellikler
 
@@ -155,7 +155,6 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için \`LICENSE\` do
 
 - **Geliştirici**: Alperhan Barut
 - **GitHub**: [@alperhanbarut](https://github.com/alperhanbarut)
-- **Demo**: [SkyCast Live Demo](https://alperhanbarut.github.io/SkyCast-weatherapp/)
 
 ## Teşekkürler
 
